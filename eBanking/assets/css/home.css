@@ -1,0 +1,361 @@
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body{
+        background-color: rgb(239, 239, 239);
+        display: flex;
+    }
+
+    header{
+        width: 100%;
+        height: 15vh;
+        background-color: rgb(234, 234, 234);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #content-home{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        filter: drop-shadow(1px 1px 10px rgba(246, 157, 157, 0.474));
+    }
+
+
+    aside{
+        width: 25%;
+        height: 100vh;
+        background-color: rgb(254, 254, 254);
+        box-shadow: 0px 10px 25px rgba(4, 4, 4, 0.193);
+    }
+
+    aside .header-aside{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    aside h2{
+        width: 100%;
+        border-top: 1px solid rgb(190, 190, 190);
+        border-bottom: 1px solid rgb(190, 190, 190);
+        text-align: center;
+        padding: 15px;
+    }
+
+
+    aside .mid-aside{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    aside .mid-aside ul{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+    }
+
+    aside .mid-aside button{
+        padding: 10px 20px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: rgb(160, 23, 23);
+        transition: all .3s ease-out;
+    }
+
+    aside .mid-aside ul button{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 17px;
+
+    }
+
+
+    aside .mid-aside button:hover{
+        letter-spacing: 2px;
+    }
+
+
+    aside .footer-aside{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        color: rgb(183, 89, 89);
+    }
+
+
+    .content-cuenta{
+        width: 80%;
+        height: 60%;
+        padding: 0px 0px;
+        box-shadow: 0px 6px 25px rgba(59, 58, 58, 0.201);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        animation: aparecerCuenta 1s ease-out both;
+    }
+
+
+    .content-cuenta .header-cuenta{
+        width: 100%;
+        text-align: center;
+        background-color:rgb(207, 32, 32);
+        padding: 20px 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    #header-table{
+        background-color: rgb(241, 189, 189);
+    }
+
+
+    @keyframes aparecerCuenta {
+        from{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+
+        top{
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    table{
+        width: 100%;
+        height: 10vh;
+        place-self: center;
+        background-color: transparent;
+    }
+
+    tbody{
+        width: 100%;
+        height: 100%;
+    }
+
+    #header-table{
+        font-weight: 500;
+        letter-spacing: 1px;
+    }
+
+    #header-table,#footer-table td{
+        text-align: center;
+    }
+
+
+    #footer-table{
+        background-color: rgb(213, 58, 58);
+    }
+
+
+    .content-movimientos{
+        width: 80%;
+        height: 60%;
+        padding: 0px 0px;
+        box-shadow: 0px 6px 25px rgba(59, 58, 58, 0.201);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        animation: aparecerCuenta 1s ease-out both;
+    }
+
+
+    .header-movimientos{
+        width: 100%;
+        text-align: center;
+        background-color:rgb(207, 32, 32);
+        padding: 20px 50px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+
+    .content-table table{
+        text-align: center;
+    }
+
+    #weightFont{
+        font-weight: 500;
+    }
+
+
+
+    #btnCerrarSesion{
+        background-color: rgb(207, 32, 32);
+        color: white;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 45px;
+        box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.356);
+        cursor: pointer;
+    }
+
+    #btnCerrarSesion:hover{
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.473);
+        letter-spacing:1.5px;
+    }
+
+
+    .contentTransferir{
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.315);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+        height: 75%;
+        border-radius: 20px;
+        animation: aparecerCuenta 1s ease-out both;
+
+    }
+
+    .headerTransferir{
+        width: 100%;
+        height: 20%;
+        font-size: 30px;
+        letter-spacing: 1px;
+        color: rgb(160, 23, 23);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .midTransferir{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    form input, select{
+        padding: 10px 20px;
+        background-color: white;
+        border: 1px solid rgb(131, 65, 65);
+        border-radius: 10px;
+        transition: all .3s ease-out;
+        outline: none;
+
+
+    }
+
+
+    form input:focus{
+        background-color: rgb(201,36,36);
+        color: white;
+        transform: translateY(-10px);
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.264);
+    }
+    
+    form select:focus option{
+        background-color: rgb(90, 47, 47);
+        color: white;
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.264);
+    }
+
+    input::placeholder{
+        color: rgb(193, 135, 135);
+    }
+
+    .midTransferir form{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .header-form, .mid-form, .mid-form2, .footer-form{
+        width: 80%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-form{
+        display: flex;
+        width: 70%;
+
+    }
+
+    .header-form input{
+        margin: 0px 10px 0px 0px;
+    }
+
+    .midTransferir form input{
+        width: 70%;
+        height: 45px;
+    }
+
+    .mid-form2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mid-form2 select{
+        width: 70%;
+        height: 45px;
+        margin: 0px 0px 40px 0px;
+    }
+
+
+    #btnFormTransfer{
+        width: 30%;
+        cursor: pointer;
+        background-color: rgb(207, 32, 32);
+        color: white;
+        border: none;
+        border-radius: 10px; 
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.295);
+        transition: all .3s ease-out;
+    }
+
+
+    #btnFormTransfer:hover{
+        filter: brightness(.8);
+        box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.418);
+        transform: translateY(-10px);
+    }
+
