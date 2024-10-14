@@ -1,5 +1,6 @@
 <?php
-// Verificar si la cookie 'nombreUsuario' está definida
+
+if(session_status() === PHP_SESSION_NONE) session_start();
 $nombreUsuario = isset($_COOKIE['nombreUsuario']) ? $_COOKIE['nombreUsuario'] : 'Invitado';
 ?>
 
@@ -20,11 +21,11 @@ $nombreUsuario = isset($_COOKIE['nombreUsuario']) ? $_COOKIE['nombreUsuario'] : 
     </div>
 
     <div class="mid-aside">
-        <h2><button id = "btnCuenta"><i class="bi bi-person-bounding-box"></i> Mi Cuenta</button></h2>
+        <h2><a href="index.php?controller=usuario&action=verCuenta" id = "btnCuenta"><i class="bi bi-person-bounding-box"></i> Mi Cuenta</a></h2>
     
         <ul>
-        <li><button href="" id = "btnTransferir"><i class="bi bi-arrow-left-right"></i> Transferir</button></li>
-        <li><button href="" id = "btnMovimientos"><i class="bi bi-card-list"></i> Movimientos</button></li>
+        <li><a href="index.php?controller=usuario&action=transferir" id = "btnTransferir"><i class="bi bi-arrow-left-right"></i> Transferir</a></li>
+        <li><a href="index.php?controller=usuario&action=movimientos" id = "btnMovimientos"><i class="bi bi-card-list"></i> Movimientos</a></li>
         <form action="">
             <li><input type = "submit" id = "btnCerrarSesion" value= "Cerrar Sesión"></li>
         </form>
@@ -38,12 +39,3 @@ $nombreUsuario = isset($_COOKIE['nombreUsuario']) ? $_COOKIE['nombreUsuario'] : 
     </div>
 
 </aside>
-
-
-<?php require_once 'home.header.php'; ?>
-<div id="content-home">
-    <h2>¡Bienvenido, <?php echo $nombreUsuario; ?>!</h2>
-</div>
-<?php require_once 'home.header.php'; ?>
-
-    

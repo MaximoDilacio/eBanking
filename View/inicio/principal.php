@@ -14,7 +14,7 @@
        <img src="assets/img/eLogo.png" alt="" >
     </div>
        
-    <form action="index.php?controller=login&action=login" method = "post">
+    <form action="index.php?controller=usuario&action=login" method = "post">
         <input type="text" name="nombreUsuario" id="nombreUsuario"  required placeholder = "Ingrese su Nombre y Apellido">
         <input type="text" name="email" id="email"  required placeholder = "Ingrese su email">
         <input type="password" name="password" id="password" minlength = "8" maxlength = "15" required placeholder = "Ingrese su contraseña">
@@ -24,7 +24,7 @@
     
     <div class="content-form-footer">
         <small><a href="">Olvidé Mi Contraseña <i class="bi bi-lock"></i></a></small>
-        <p>¿Aún no tienes cuenta de eBanking? <a href="./View/register.php">Registrate</a></p>
+        <p>¿Aún no tienes cuenta de eBanking? <a href="index.php?controller=usuario&action=register">Registrate</a></p>
     </div>
 
     <small></small>
